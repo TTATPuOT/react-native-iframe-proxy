@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const iframe = document.createElement('iframe');
     iframe.width = '100%';
     iframe.height = '100%';
-    iframe.src = 'https://www.youtube.com/embed/' + videoId;
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.src = 'https://www.youtube.com/embed/' + videoId + '?rel=0&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=1';
+    //iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.allowfullscreen = true;
 
     iframe.setAttribute('frameborder', '0');
