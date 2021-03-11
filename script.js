@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const error = document.createElement('div');
         error.innerText = 'Please, send query param ?v=[videoId] for show iframe';
         document.body.appendChild(error);
-
         return;
     }
 
