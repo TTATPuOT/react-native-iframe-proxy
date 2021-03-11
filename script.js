@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const iframe = document.createElement('iframe');
+    /*const iframe = document.createElement('iframe');
     iframe.width = '100%';
     iframe.height = '100%';
     iframe.src = 'https://www.youtube.com/embed/' + videoId + '?rel=0&enablejsapi=1&playsinline=1&showInfo=0&controls=1&fullscreen=1';
@@ -18,5 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     iframe.setAttribute('frameborder', '0');
 
-    document.body.appendChild(iframe);
+    document.body.appendChild(iframe);*/
+
+    const playerDiv = document.getElementById('player');
+    playerDiv.setAttribute('data-plyr-provider', 'youtube');
+    playerDiv.setAttribute('data-plyr-embed-id', videoId);
+    new Plyr(playerDiv);
+
+
 })
